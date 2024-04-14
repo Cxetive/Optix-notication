@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
+body {
+    overflow: hidden;
+    user-select: none;
+}
+
+.notification-container {
+    position: absolute;
+    left: 0.5%;
+    top: 71%;
+    height: 100%;
+    width: 18%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.notification {
+    position: relative;
+    margin-right: 5px;
+    margin-top: 5px;
+    margin-bottom: 0px;
+    height: fit-content;
+    min-width: 30vh;
+    background-color: rgba(0, 0, 0, 0.33);
+    border-radius: 0.1rem;
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+.notification-text {
+    top: 0.30vh;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: white;
+}
+
+.notification-text-container {
+    width: 90%;
+    height: fit-content;
+    margin-top: 7.5px;
+    max-width: 90%;
+    margin-left: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    margin-bottom: 10px;
+    display: flex;
+    border-radius: 0.25vh;
+}
+
+.error {
+    border: rgb(189, 60, 60) solid 2px;
+    background-color: rgb(189, 60, 60);
+    border-radius: 0.25vh;
+    box-shadow: 0.25vh 0.25vh 0.25vh rgba(0, 0, 0, 0.50);
+}
+
+.error .notification-text-container:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 3vh;
+    color: white;
+    position: relative;
+    top: 0.10vh;
+    content: "\f071 \00a0";
+}
+
+.info {
+    border: rgb(46, 105, 199) solid 2px;
+    background-color: rgb(46, 105, 199);
+    border-radius: 0.25vh;
+    box-shadow: 0.25vh 0.25vh 0.25vh rgba(0, 0, 0, 0.50);
+}
+
+.info .notification-text-container:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 3vh;
+    color: white;
+    position: relative;
+    top: 0.10vh;
+    content: "\f05a \00a0";
+}
+
+.success {
+    border: rgb(97, 150, 54) solid 2px;
+    background-color: rgb(97, 150, 54);
+    border-radius: 0.25vh;
+    box-shadow: 0.25vh 0.25vh 0.25vh rgba(0, 0, 0, 0.50);
+}
+
+.success .notification-text-container:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 3vh;
+    color: white;
+    position: relative;
+    top: 0.10vh;
+    content: "\f058 \00a0";
+}
+
+.warning {
+    border: rgb(212, 153, 24) solid 2px;
+    background-color: rgb(212, 153, 24);
+    border-radius: 0.25vh;
+    box-shadow: 0.25vh 0.25vh 0.25vh rgba(0, 0, 0, 0.50);
+}
+
+.warning .notification-text-container:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 3vh;
+    color: white;
+    position: relative;
+    top: 0.10vh;
+    content: "\f06a \00a0";
+}
+
+.noodknop {
+    border: rgb(212, 153, 24) solid 2px;
+    background-color: rgb(212, 153, 24);
+    border-radius: 0.25vh;
+    box-shadow: 0.25vh 0.25vh 0.25vh rgba(0, 0, 0, 0.50);
+    animation: rgb 4s infinite alternate linear;
+}
+
+.noodknop .notification-text-container:before {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 3vh;
+    color: white;
+    position: relative;
+    top: 0.10vh;
+    content: "\f3ed";
+}
+
+@keyframes rgb {
+    0% {
+        border: rgb(255, 0, 0) solid 2px;
+        background-color: rgb(255, 0, 0);
+    }
+    20% {
+        border: rgb(175, 80, 0) solid 2px;
+        background-color: rgb(175, 80, 0);
+    }
+    50% {
+        border: rgb(80, 175, 0) solid 2px;
+        background-color: rgb(80, 175, 0)
+    }
+    100% {
+        border: rgb(0, 255, 0) solid 2px;
+        background-color: rgb(0, 255, 0)
+    }
+}
